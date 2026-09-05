@@ -45,8 +45,9 @@ st.caption(
 anio_min, anio_max = meta["rango_anio_firma"]
 st.info(
     f"⚠️ El modelo solo es válido para contratos con año de firma entre "
-    f"**{anio_min} y {anio_max}**. Fuera de ese rango, la predicción no es confiable "
-    f"(ver Documento de Soporte — Corrección de Sesgo de Censura Temporal)."
+    f"**{anio_min} y {anio_max}**. Fuera de ese rango, la predicción no es confiable, "
+    f"porque los contratos más recientes aún no han tenido tiempo de mostrar si "
+    f"requieren o no una prórroga."
 )
 
 st.subheader("Datos del contrato")
